@@ -3,7 +3,7 @@ return {
 		OFF = 1,
 		FATAL = 2,
 		ERROR = 3,
-		WARNING = 4,
+		WARN = 4,
 		INFO = 5,
 		DEBUG = 6,
 	},

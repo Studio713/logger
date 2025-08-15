@@ -26,15 +26,15 @@ function Logger.configure()
 end
 
 function Logger.fatal(messageTemplate, ...)
-	local event = log_event.new("INFO", messageTemplate, ...)
+	local event = log_event.new("FATAL", messageTemplate, ...)
 	write(error, event)
 end
 function Logger.error(messageTemplate, ...)
-	local event = log_event.new("INFO", messageTemplate, ...)
+	local event = log_event.new("ERROR", messageTemplate, ...)
 	write(error, event)
 end
 function Logger.warn(messageTemplate, ...)
-	local event = log_event.new("INFO", messageTemplate, ...)
+	local event = log_event.new("WARN", messageTemplate, ...)
 	write(warn, event)
 end
 function Logger.info(messageTemplate, ...)

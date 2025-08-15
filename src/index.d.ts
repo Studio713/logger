@@ -2,7 +2,7 @@ export = logger;
 export as namespace logger;
 
 declare namespace logger {
-  type LogLevel = "OFF" | "FATAL" | "ERROR" | "WARNING" | "INFO" | "DEBUG";
+  type LogLevel = "OFF" | "FATAL" | "ERROR" | "WARN" | "INFO" | "DEBUG";
   interface Configuration {
     setMinimumLogLevel: (level: LogLevel) => Configuration;
     setDebugCondition: (callback: () => boolean) => Configuration;
